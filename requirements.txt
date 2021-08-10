@@ -1,6 +1,6 @@
 yolk
 healpy
-epheM
+ephem
 git+https://github.com/krosenfeld/slimscat.git#egg=slimscat
 astropy>=3.2.0<4.0
 aplpy>=2.0<3.0
