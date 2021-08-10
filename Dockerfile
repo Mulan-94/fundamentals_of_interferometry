@@ -2,7 +2,9 @@ FROM kernsuite/base:5
 MAINTAINER gijs@pythonic.nl
 RUN docker-apt-install python3 python3-pip
 COPY requirements.txt /
-ECHO python --version
+RUN pip3 install -U pip
+RUN docker-apt-install git
+RUN echo "deuces"
 RUN pip3 install -r /requirements.txt
 COPY . /notebooks
 EXPOSE 8888
