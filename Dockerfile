@@ -21,3 +21,4 @@ ENV VIRTUAL_ENV="${HOME}/nasspenv"
 RUN python3 -m virtualenv -p /usr/bin/python3 $VIRTUAL_ENV
 ENV PATH="$VIRTUAL_ENV/bin:${HOME}/.local/bin:$PATH"
 RUN pip install --no-cache-dir -r ${HOME}/requirements.txt
+WORKDIR ${HOME}
